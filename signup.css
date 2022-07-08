@@ -1,0 +1,33 @@
+body {
+	background-image: url("graphics/main_texture_black.png");
+	background-repeat: repeat;
+	overflow: hidden;
+}
+
+.signupform {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 38.325%;
+	top: 30%;
+	color: white;
+	font-family: 'Krona One', sans-serif;  
+}
+
+.menu {
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	top: 0%;
+}
+
+.confirm {
+	width: 10%;
+	height: 5%;
+	position: absolute;
+	top: 520px;
+	left: 135px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+}
