@@ -1,0 +1,45 @@
+body {
+	background-color: black;
+	background-image: url("../graphics/main_texture_black.jpg");
+	background-repeat: repeat;
+	font-family: 'Krona One', sans-serif;
+}
+
+.nav-style {
+	font-size: 24px;
+}
+
+.target {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.inactive {
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.inactive:hover {
+	color: #EE9043;
+}
+
+.activepage {
+	padding: 10px;
+	text-decoration: none;
+	color: #EE9043;
+}
+
+.activepage:hover {
+	color: #EE9043;
+}
+
+section {
+	background-color: rgba(255, 255, 255, 0.5);
+	margin: 50px;
+	margin-top: 100px;
+	margin-bottom: 10px;
+	padding: 50px;
+	border-radius: 50px;
+}
