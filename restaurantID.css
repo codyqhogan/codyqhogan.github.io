@@ -1,0 +1,78 @@
+body {
+	background-color: black;
+	background-image: url("graphics/main_texture_black.jpg");
+	background-repeat: repeat;
+	font-family: 'Krona One', sans-serif;
+	overflow: hidden;
+}
+
+.card {
+	background-color: rgba(255, 255, 255, 0.15);
+	margin: -7px;
+	text-align: center;
+}
+
+.card:hover {
+	box-shadow: 5px 5px 5px black;
+	transform: translate(-5px, -5px);
+}
+
+.nav-style {
+	font-size: 24px;
+}
+
+.target {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.inactive {
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.inactive:hover {
+	color: #EE9043;
+}
+
+.activepage {
+	padding: 10px;
+	text-decoration: none;
+	color: #EE9043;
+}
+
+.activepage:hover {
+	color: #EE9043;
+}
+
+.cardlink {
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+}
+
+.cardlink:hover {
+	color: black;
+}
+
+section {
+	background-color: rgba(255, 255, 255, 0.5);
+	margin: 50px;
+	margin-top: 110px;
+	margin-bottom: 10px;
+	padding: 40px;
+	border-radius: 50px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 26px;
+	padding-bottom: 15px;
+}
+
+.card-header {
+	font-size: 24px;
+	font-weight: bold;
+}
