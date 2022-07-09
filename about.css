@@ -1,0 +1,60 @@
+body {
+	background-color: black;
+	background-image: url("graphics/main_texture_black.jpg");
+	background-repeat: repeat;
+}
+
+.menu {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section {
+	margin: auto;
+	width: auto;
+	height: 621px;
+	position: relative;
+	top: 50px;
+	background-image: url("graphics/main_texture.jpg");
+	background-repeat: repeat;
+	border-radius: 50px;
+	padding: 30px;
+	font-family: century gothic;
+	overflow: auto;
+}
+
+.textbox {
+	height: 100%;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 25px;
+	overflow: auto;
+}
+
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #EE9043;
+	font-size: 42px;
+}
+
+p {
+	text-align: justify;
+	font-size: 12px;
+	line-height: 1.5;
+	font-weight: bold;
+}
+
+.asideleft {
+	filter: blur(2px);
+	position: relative;
+	border-radius: 30px;
+	float: left;
+}
+
+.asideright {
+	filter: blur(2px);
+	position: relative;
+	border-radius: 30px;
+	float: right;
+}
