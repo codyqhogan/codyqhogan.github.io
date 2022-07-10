@@ -6,6 +6,11 @@ body {
 	overflow: hidden;
 }
 
+@font-face {
+	font-family: "Krona One";
+	src: url("KronaOne-Regular.ttf") format("truetype"),
+}
+
 .signupform {
 	width: 100%;
 	height: 100%;
@@ -13,11 +18,7 @@ body {
 	left: 38.325%;
 	top: 30%;
 	color: white;
-	@font-face {
-  		font-family: "Krona One";
-  		src: url("../codyqhogan.github.io/KronaOne-Regular.ttf") format("truetype"),
-	}
-	font-family: 'Krona One', sans-serif;  
+	#font-family: 'Krona One', sans-serif;  
 }
 
 .menu {
