@@ -1,7 +1,5 @@
 body {
-	margin-left: -15px;
-	margin-top: -50px;
-	background-image: url("graphics/main_texture_black.png");
+	background-image: url("graphics/main_texture_black.jpg");
 	background-repeat: repeat;
 	overflow: hidden;
 }
@@ -10,15 +8,16 @@ body {
 	width: 100%;
 	height: 100%;
 	position: fixed;
-	left: 41%;
+	left: 38.325%;
 	top: 40%;
 	color: white;
 	font-family: 'Krona One', sans-serif;                                                
 }
 
 .menu {
-	position: fixed;
-	left: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
 	top: 0%;
 }
 
@@ -27,7 +26,7 @@ body {
 	height: 5%;
 	position: absolute;
 	top: 230px;
-	left: 45px;
+	left: 135px;
 	text-align: center;
 	font-size: 25px;
 	font-weight: bold;
