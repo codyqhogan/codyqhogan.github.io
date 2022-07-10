@@ -8,7 +8,7 @@ body {
 
 @font-face {
 	font-family: "Krona One";
-	src: url("KronaOne-Regular.ttf") format("truetype"),
+	src: url("http://fonts.cdnfonts.com/css/krona-one") format("truetype"),
 }
 
 .signupform {
