@@ -13,53 +13,60 @@
 
 <body>
 <div class="d-flex justify-content-center">
-<img class="menu" src="Graphics/CircleHotbar/signup_selected_circlehotbar.png">
-</div>
+<img class="menu" src="graphics/signup_hotbar.png" usemap="#workmap">
+
+<map name="workmap">
+	<area shape="circle" coords="30,80,50" href="main.html">
+	<area shape="circle" coords="110,170,50" href="about.html">
+	<area shape="circle" coords="500,170,50" href="signup.html">
+	<area shape="circle" coords="580,80,50" href="signin.html">
+</map>
+	</div>
 <div class="signupform">
-  <form>
+  <form action="signup" oninput='cPass.setCustomValidity(cPass.value != pass.value ? "Passwords do not match!" : "")'>
     <div class="row">
 	<div class="form-group col-sm-3">
 		<h5>Name (Owner)</h5>
-        <input type="text" class="form-control" placeholder="Enter Owner Name" name="oName">
+        <input type="text" class="form-control" placeholder="Enter Owner Name" name="oName" required>
 	</div>
 	</div>
 	<div class="row">
 	<div class="form-group col-sm-3">
 		<h5>Phone Number</h5>
-        <input type="tel" class="form-control" placeholder="Enter Phone Number" name="pNum">
+        <input type="number" class="form-control" placeholder="Enter Phone Number" name="pNum" required>
     </div>
 	</div>
 	<div class="row">
 	<div class="form-group col-sm-3">
 		<h5>Email</h5>
-        <input type="email" class="form-control" placeholder="Enter Email" name="email">
+        <input type="email" class="form-control" placeholder="Enter Email" name="email" required>
 	</div>
 	</div>
 	<div class="row">
 	<div class="form-group col-sm-3">
 		<h5>Resturaunt Name</h5>
-        <input type="text" class="form-control" placeholder="Enter Resturaunt Name" name="rName">
+        <input type="text" class="form-control" placeholder="Enter Resturaunt Name" name="rName" required>
 	</div>
 	</div>
 	<div class="row">
 	<div class="form-group col-sm-3">
 		<h5>Resturaunt Address</h5>
-        <input type="text" class="form-control" placeholder="Enter Resturaunt Address" name="rAdd">
+        <input type="text" class="form-control" placeholder="Enter Resturaunt Address" name="rAdd" required>
 	</div>
 	</div>
 	<div class="row">
 	<div class="form-group col-sm-3">
 		<h5>Password</h5>
-        <input type="password" class="form-control" placeholder="Enter Password" name="pass">
+        <input type="password" class="form-control" placeholder="Enter Password" name="pass" required>
 	</div>
 	</div>
 	<div class="row">
 	<div class="form-group col-sm-3">
 		<h5>Confirm Password</h5>
-        <input type="password" class="form-control" placeholder="Enter Password" name="cPass">
+        <input type="password" class="form-control" placeholder="Enter Password" name="cPass" required>
 	</div>
 	</div>
-	<button type="submit" class="confirm">CONFRIM</button>
+	<button type="submit" class="confirm">CONFIRM</button>
   </form>
 </div>
 </body>
