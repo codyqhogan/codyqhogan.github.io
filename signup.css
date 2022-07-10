@@ -7,7 +7,7 @@ body {
 }
 
 @font-face {
-	font-family: "Krona One";
+	font-family: Krona One;
 	src: url("http://fonts.cdnfonts.com/css/krona-one") format("truetype"),
 }
 
@@ -18,7 +18,7 @@ body {
 	left: 38.325%;
 	top: 30%;
 	color: white;
-	#font-family: 'Krona One', sans-serif;  
+	font-family: Krona One;  
 }
 
 .menu {
