@@ -1,4 +1,6 @@
 body {
+	margin-left: -15px;
+	margin-top: -50px;
 	background-image: url("graphics/main_texture_black.jpg");
 	background-repeat: repeat;
 	overflow: hidden;
