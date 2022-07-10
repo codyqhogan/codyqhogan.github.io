@@ -7,8 +7,8 @@ body {
 }
 
 @font-face {
-	font-family: Krona One;
-	src: url(../codyqhogan.github.io/KronaOne-Regular.ttf) format('truetype');
+	font-family: 'Krona One';
+	src: url('KronaOne-Regular.ttf') format('truetype');
 }
 
 .signupform {
@@ -18,7 +18,7 @@ body {
 	left: 38.325%;
 	top: 30%;
 	color: white;
-	font-family: Krona One;  
+	font-family: 'Krona One';  
 }
 
 .menu {
