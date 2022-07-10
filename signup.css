@@ -6,11 +6,6 @@ body {
 	overflow: hidden;
 }
 
-@font-face {
-	font-family: 'remove';
-	src: url('KronaOne-Regular.ttf') format('truetype');
-}
-
 .signupform {
 	width: 100%;
 	height: 100%;
