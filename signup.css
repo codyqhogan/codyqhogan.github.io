@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Krona One";
-  src: url("../codyqhogan.github.io/KronaOne-Regular.ttf") format("truetype"),
-}
-
 body {
 	margin-left: -15px;
 	margin-top: -50px;
@@ -18,6 +13,10 @@ body {
 	left: 38.325%;
 	top: 30%;
 	color: white;
+	@font-face {
+  		font-family: "Krona One";
+  		src: url("../codyqhogan.github.io/KronaOne-Regular.ttf") format("truetype"),
+	}
 	font-family: 'Krona One', sans-serif;  
 }
 
