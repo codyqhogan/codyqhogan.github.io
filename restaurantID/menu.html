@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-<link rel="stylesheet" type= "text/css" href="stock.css">
+<link rel="stylesheet" type= "text/css" href="rMenu.css">
 </head>
 
 <body>
@@ -53,9 +53,86 @@
 </div>
 
 <section>
+<div class="d-flex justify-content-center">
+	<button type="button" class="btn btn-dark add" data-bs-toggle="modal" data-bs-target="#add">ADD MENU ITEM</button>
+	<button type="button" class="btn btn-dark remove" data-bs-toggle="modal" data-bs-target="#remove">REMOVE MENU ITEM</button>
+</div>
+<div class="modal fade" id="add">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title text-center">ADD MENU ITEM</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+			<div class="mb-3 mt-3">
+				<label for="name" class="form-label">Menu Item:</label>
+				<input type="text" class="form-control" id="name" placeholder="Enter Menu Item" name="mItem">
+			</div>
+			<div class="mb-3">
+				<label for="quantity" class="form-label">Number of Ingredients:</label>
+				<input type="number" min="1" class="form-control" id="quantity" placeholder="Enter Number of Ingredients" name="iNum">
+			</div>
+			<div class="mb-3">
+				<label for="quantity" class="form-label">**Add function to input ingredients**</label>
+				<input type="number" min="0" class="form-control" id="quantity" placeholder="" name="iNum">
+			</div>
+</form> 
+      </div>
+      <div class="modal-footer">
+	    <button type="submit" class="btn btn-dark" data-bs-dismiss="modal">Add</button>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="remove">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title text-center">REMOVE MENU ITEM</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+			<div class="mb-3 mt-3">
+				<label for="name" class="form-label">Menu Item:</label>
+				<input type="text" class="form-control" id="name" placeholder="Enter Menu Item" name="mItem">
+			</div>
+</form> 
+      </div>
+      <div class="modal-footer">
+	    <button type="submit" class="btn btn-dark" data-bs-dismiss="modal">Remove</button>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container p-5 my-5 bg-dark text-white">
+  <h5>Menu Item Name 1</h5>
+  <pre class="tab">                                            _ Ingredient                           _ Ingredient                           _ Ingredient                           _ Ingredient</pre>
+  <pre class="tab">                                            _ Ingredient                           _ Ingredient                           _ Ingredient                           _ Ingredient</pre>
+  <pre class="tab">                                            _ Ingredient                           _ Ingredient                           _ Ingredient                           _ Ingredient</pre>
+</div>
+<div class="container p-5 my-5 bg-dark text-white">
+  <h5>Menu Item Name 2</h5>
+  <pre class="tab">                                            _ Ingredient                           _ Ingredient                           _ Ingredient                           _ Ingredient</pre>
+  <pre class="tab">                                            _ Ingredient                           _ Ingredient                           _ Ingredient                           _ Ingredient</pre>
+  <pre class="tab">                                            _ Ingredient                           _ Ingredient                           _ Ingredient                           _ Ingredient</pre>
+</div>
+<div class="container p-5 my-5 bg-dark text-white">
+  <h5>Menu Item Name 3</h5>
+  <pre class="tab">                                            _ Ingredient                           _ Ingredient                           _ Ingredient                           _ Ingredient</pre>
+  <pre class="tab">                                            _ Ingredient                           _ Ingredient                           _ Ingredient                           _ Ingredient</pre>
+  <pre class="tab">                                            _ Ingredient                           _ Ingredient                           _ Ingredient                           _ Ingredient</pre>
+</div>
+<div class="container p-5 my-5 bg-dark text-white">
+  <h5>Menu Item Name 4</h5>
+  <pre class="tab">                                            _ Ingredient                           _ Ingredient                           _ Ingredient                           _ Ingredient</pre>
+  <pre class="tab">                                            _ Ingredient                           _ Ingredient                           _ Ingredient                           _ Ingredient</pre>
+  <pre class="tab">                                            _ Ingredient                           _ Ingredient                           _ Ingredient                           _ Ingredient</pre>
+</div>
+</body>
 
 </section>
-
-</body>
 
 </html>
