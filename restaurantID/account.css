@@ -3,6 +3,7 @@ body {
 	background-image: url("../graphics/main_texture_black.jpg");
 	background-repeat: repeat;
 	font-family: 'Krona One', sans-serif;
+	overfill: hidden;
 }
 
 .nav-style {
@@ -35,11 +36,47 @@ body {
 	color: #EE9043;
 }
 
+.card {
+	margin-top: 40px;
+}
+
+.account_img {
+	margin: auto;
+}
+
+.select {
+	margin-left: 50px;
+}
+
+.col-8 {
+	height: 500px;
+	margin-top: 50px;
+	padding-top: 100px;
+}
+
+.editbutton:hover {
+	color: #EE9043;
+	box-shadow: 2px 2px 5px black;
+	transform: translate(-1px, -1px);
+}
+
+h4 {
+	font-size: 40px;
+	padding-bottom: 30px;
+}
+
+h5 {
+	font-size: 36px;
+	padding-top: 15px;
+}
+
 section {
+	height: 600px;
 	background-color: rgba(255, 255, 255, 0.5);
 	margin: 50px;
 	margin-top: 100px;
 	margin-bottom: 10px;
-	padding: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
 	border-radius: 50px;
 }
