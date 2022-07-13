@@ -54,6 +54,80 @@
 
 <section>
 
+<div class="d-flex row no-gutters">
+<div class="col-4">
+<div class="card bg-transparent border-0">
+<img class="account_img" src="../graphics/account.png" height="400" width="400">
+</div>
+<div class="select">
+<button type="button" class="btn btn-dark">
+  <label for="formFileSm" class="form-label text-center">Choose a new profile photo...</label>
+  <input class="form-control form-control-sm" id="formFileSm" type="file" accept=".jpg,.gif,.png">
+</button>
+</div>
+</div>
+
+<div class="col-8 text-center border border-dark border-3 rounded">
+
+<h4>RestaurantName</h5>
+<h5>RestaurantAddress</h5>
+<h5>RestaurantPhone</h5>
+<br><br>
+<button type="button" class="btn btn-dark mx-auto editbutton" data-bs-toggle="modal" data-bs-target="#editInfo" data-title="RestaurantName" data-address="RestaurantAddress" data-phone="RestaurantPhone">
+EDIT INFORMATION
+</button>
+
+</div>
+</div>
+
+<!-- EDIT INFO MODAL -->
+<div class="modal" id="editInfo">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title col-11 text-center">EDIT INFORMATION</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+         <form action="/action_page.php">
+			<div class="mb-3">
+				<input class="form-control restaurantTitle" type="text" placeholder="Default input" aria-label="default input example"><br>
+				<input class="form-control restaurantAddress" type="text" placeholder="Default input" aria-label="default input example"><br>
+				<input class="form-control restaurantPhone" type="text" placeholder="Default input" aria-label="default input example"><br>
+			</div>
+</form> 
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+	    <button type="submit" class="btn btn-dark" data-bs-dismiss="modal">Submit</button>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+<!-- END EDIT ITEM MODAL -->
+
+<!-- START EDIT INFO MODAL SCRIPT -->
+<script>
+$('#editInfo').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget)
+  var title = button.data('title')
+  var address = button.data('address')
+  var phone = button.data('phone')
+  var modal = $(this)
+  modal.find('.restaurantTitle').attr('placeholder', title)
+  modal.find('.restaurantAddress').attr('placeholder', address)
+  modal.find('.restaurantPhone').attr('placeholder', phone)
+})
+</script>
+<!-- END EDIT INFO MODAL SCRIPT -->
+
 </section>
 
 </body>
