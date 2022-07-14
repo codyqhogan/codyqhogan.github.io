@@ -7,7 +7,7 @@ body {
 }
 
 .dark-mode {
-	background-image: url("graphics/main_texture.jpg");
+	background-image: url("../graphics/main_texture.jpg");
 	background-repeat: repeat;
 	overflow: hidden;
 }
