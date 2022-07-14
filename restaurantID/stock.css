@@ -6,6 +6,12 @@ body {
 	overflow: hidden;
 }
 
+.dark-mode {
+	background-image: url("graphics/main_texture.jpg");
+	background-repeat: repeat;
+	overflow: hidden;
+}
+
 .modal-header {
 	color: #EE9043;
 }
@@ -60,6 +66,16 @@ h5 {
 	font-size: 28px;
 }
 
+.access{
+  position: absolute;
+  padding: 0;
+  border: none;
+  background-color: transparent;	
+  cursor: pointer;
+  bottom: 30px;
+  right: 20px;
+}
+
 .badge {
 	background-color: #EE9043;
 	color: white;
@@ -106,7 +122,7 @@ h5 {
 section {
 	height: 600px;
 	background-color: rgba(255, 255, 255, 0.5);
-	margin: 50px;
+	margin: 100px;
 	margin-top: 110px;
 	padding: 50px;
 	padding-top: 25px;
