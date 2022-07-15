@@ -1,4 +1,5 @@
 <?php
+    echo ("<p>Adding information...</p>");
     require_once "pdo.php";
 
     if( isset($_POST['oName']) && isset($_POST['pNum']) && isset($_POST['email']) && isset($_POST['rName'])
@@ -8,9 +9,6 @@
 
             $sql = "INSERT INTO restaurants(owner_name, phone_number, email, rest_name, rest_add, pwd_hash) 
                 VALUES(:oName, :pNum, :email, :rName, :rAdd, :pass)";
-
-            echo("<pre>\n".$sql."\n<pre>\n");
-            echo("Registration Complete");
 
             $stmt = $pdo->prepare($sql);
 
@@ -25,3 +23,12 @@
         }
 
 ?>
+<html>
+        <head></head>
+
+    <body>
+        <?php echo ("<p>$sql</p>"); ?>
+        <p>Registration Complete</p>
+    </body>
+
+</html>
