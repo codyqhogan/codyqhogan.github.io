@@ -12,6 +12,11 @@ body {
 	overflow: hidden;
 }
 
+.btn {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
 .nav-style {
 	font-size: 24px;
 }
@@ -64,4 +69,8 @@ section {
 	overflow-x: hidden;
 	scrollbar-width: thin;
 	scrollbar-color: #EE9043 grey;
+}
+
+section::-webkit-scrollbar {
+  width: 15px;
 }
