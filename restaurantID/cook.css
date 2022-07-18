@@ -3,6 +3,7 @@ body {
 	background-image: url("../graphics/main_texture_black.jpg");
 	background-repeat: repeat;
 	font-family: 'Krona One', sans-serif;
+	overflow: hidden;
 }
 
 .dark-mode {
@@ -15,6 +16,16 @@ body {
 .btn {
 	font-size: 18px;
 	margin-bottom: 20px;
+}
+
+.access{
+  position: absolute;
+  padding: 0;
+  border: none;
+  background-color: transparent;	
+  cursor: pointer;
+  bottom: 30px;
+  right: 20px;
 }
 
 .nav-style {
@@ -35,16 +46,6 @@ body {
 
 .inactive:hover {
 	color: #EE9043;
-}
-
-.access{
-  position: absolute;
-  padding: 0;
-  border: none;
-  background-color: transparent;	
-  cursor: pointer;
-  bottom: 30px;
-  right: 20px;
 }
 
 .activepage {
