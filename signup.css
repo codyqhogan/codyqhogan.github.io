@@ -12,11 +12,11 @@ body {
 }
 
 .signupform {
-	width: 100%;
-	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
 	position: absolute;
-	left: 17.325%;
-	top: 50%;
+	height: 35vh;
+	top: 40%;
 	color: white;
 	font-family: 'Krona One', sans-serif;  
 }
@@ -35,6 +35,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	position: absolute;
+	height: 35vh;
 	top: 0%;
 }
 
