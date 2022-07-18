@@ -6,6 +6,7 @@ body {
 
 .dark-mode {
 	background-color: white;
+	color: black;
 	background-image: url("../graphics/main_texture.jpg");
 	background-repeat: repeat;
 	overflow: hidden;
