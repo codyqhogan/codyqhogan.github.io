@@ -6,6 +6,13 @@ body {
 	overflow: hidden;
 }
 
+.dark-mode {
+	background-color: white;
+	background-image: url("../graphics/main_texture.jpg");
+	background-repeat: repeat;
+	overflow: hidden;
+}
+
 .signupform {
 	width: 100%;
 	height: 100%;
@@ -14,6 +21,16 @@ body {
 	top: 30%;
 	color: white;
 	font-family: 'Krona One', sans-serif;  
+}
+
+.access{
+  position: absolute;
+  padding: 0;
+  border: none;
+  background-color: transparent;	
+  cursor: pointer;
+  bottom: 30px;
+  right: 20px;
 }
 
 .menu {
