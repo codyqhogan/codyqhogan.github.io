@@ -6,6 +6,23 @@ body {
 	overflow: hidden;
 }
 
+.dark-mode {
+	background-color: white;
+	background-image: url("../graphics/main_texture_black.jpg");
+	background-repeat: repeat;
+	overflow: hidden;
+}
+
+.access{
+  position: absolute;
+  padding: 0;
+  border: none;
+  background-color: transparent;	
+  cursor: pointer;
+  bottom: 30px;
+  right: 20px;
+}
+
 .topcircle {
 	position: absolute;
 	top: 0;
