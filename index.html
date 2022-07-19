@@ -26,6 +26,17 @@
 	<area shape="circle" coords="580,80,50" href="signin.html">
 </map>
 </div>
+<div>
+	<button class="access" onclick="darkMode()"><img src="../graphics/access_org.png" height ="70" width="70"/></button>
+</div>
+<script>
+	function darkMode() {
+		var element = document.body;
+		element.classList.toggle("dark-mode");
+		var img = document.getElementById("topcircle");
+		img.src="graphics/circlethingywh.png";
+	}
+</script>
 
 </body>
 </html>
