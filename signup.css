@@ -16,7 +16,9 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	position: absolute;
-	height: 35vh;
+	height: 80%;
+	width: 80%;
+	left: 25%;
 	top: 40%;
 	color: white;
 	font-family: 'Krona One', sans-serif;  
