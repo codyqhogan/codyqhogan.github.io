@@ -1,4 +1,5 @@
 body {
+	color: white;
 	background-image: url("graphics/main_texture_black.jpg");
 	background-repeat: repeat;
 	overflow: hidden;
@@ -16,11 +17,10 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	position: absolute;
-	height: 80%;
-	width: 80%;
-	left: 25%;
+	height: 65%;
+	width: 65%;
+	left: 30%;
 	top: 40%;
-	color: white;
 	font-family: 'Krona One', sans-serif;  
 }
 
