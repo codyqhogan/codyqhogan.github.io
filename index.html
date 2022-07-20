@@ -15,7 +15,7 @@
 <body>
 
 
-<img class="topcircle" src="graphics/circlethingy.png">
+<img class="topcircle" src="graphics/circlethingy.png" id="topcircle">
 <div class="d-flex justify-content-center">
 <img class="menu" src="graphics/home_hotbar.png" usemap="#workmap">
 
@@ -34,11 +34,11 @@
 		var element = document.body;
 		element.classList.toggle("dark-mode");
 		var image = document.getElementById('topcircle');
-		    if (image.src.match("graphics/circlethingy")) {
-			image.src = "graphics/circlethingywh";
+		    if (image.src.match("graphics/circlethingy.png")) {
+			image.src = "graphics/circlethingywh.png";
 		    }
 		    else {
-			image.src = "graphics/circlethingy";
+			image.src = "graphics/circlethingy.png";
 		    }
 	}
 </script>
