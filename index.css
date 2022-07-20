@@ -13,16 +13,6 @@ body {
 	overflow: hidden;
 }
 
-.access{
-  position: absolute;
-  padding: 0;
-  border: none;
-  background-color: transparent;	
-  cursor: pointer;
-  bottom: 30px;
-  right: 20px;
-}
-
 .topcircle {
 	position: absolute;
 	top: 0;
@@ -34,4 +24,15 @@ body {
 	margin: auto;
 	position: absolute;
 	top: 0;
+}
+
+.fixed-bottom {
+	left: 96%;
+}
+
+.access {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
 }
