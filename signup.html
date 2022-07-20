@@ -36,65 +36,65 @@
 			<div class="row">
 				<div class="col-6">
 					<h5>Name (Owner)</h5>
-					<input type="text" class="form-control" placeholder="Enter Owner Name" name="oName" required>
+					<input type="text" class="form-control" id="form-control" placeholder="Enter Owner Name" name="oName" required>
 				</div>
 	
 				<div class="col-6">
 					<h5>Phone Number</h5>
-					<input type="tel" class="form-control" placeholder="Enter Phone Number" name="pNum" id="pNum" required>
+					<input type="tel" class="form-control" id="form-control" placeholder="Enter Phone Number" name="pNum" id="pNum" required>
 				</div>
 			</div>
 	
 			<div class="row">
 				<div class="col-6">
 					<h5>Email</h5>
-					<input type="email" class="form-control" placeholder="Enter Email" name="email" required>
+					<input type="email" class="form-control" id="form-control" placeholder="Enter Email" name="email" required>
 				</div>
 	
 				<div class="col-6">
 					<h5>Resturaunt Name</h5>
-					<input type="text" class="form-control" placeholder="Enter Resturaunt Name" name="rName" required>
+					<input type="text" class="form-control" id="form-control" placeholder="Enter Resturaunt Name" name="rName" required>
 				</div>
 			</div>
 	
 			<div class="row">
 				<div class="col-6">
 					<h5>Street Address</h5>
-					<input type="text" class="form-control" placeholder="Enter Street Address" name="rAdd" required>
+					<input type="text" class="form-control" id="form-control" placeholder="Enter Street Address" name="rAdd" required>
 				</div>
 				
 				<div class="col-6">
 					<h5>City</h5>
-					<input type="text" class="form-control" placeholder="Enter City" name="rCity" required>
+					<input type="text" class="form-control" id="form-control" placeholder="Enter City" name="rCity" required>
 				</div>
 			</div>
 	
 			<div class="row">
 				<div class="col-6">
 					<h5>State</h5>
-					<input type="text" class="form-control" placeholder="Enter State" name="rState" required>
+					<input type="text" class="form-control" id="form-control" placeholder="Enter State" name="rState" required>
 				</div>
 				
 				<div class="col-6">
 					<h5>Zip Code</h5>
-					<input type="text" class="form-control" placeholder="Enter Zip Code" name="rZip" required>
+					<input type="text" class="form-control" id="form-control" placeholder="Enter Zip Code" name="rZip" required>
 				</div>
 			</div>
 	
 			<div class="row">
 				<div class="col-6">
 					<h5>Password</h5>
-					<input type="password" class="form-control" placeholder="Enter Password" name="pass" required>
+					<input type="password" class="form-control" id="form-control" placeholder="Enter Password" name="pass" required>
 				</div>
 				
 				<div class="col-6">
 					<h5>Confirm Password</h5>
-					<input type="password" class="form-control" placeholder="Enter Password" name="cPass" required>
+					<input type="password" class="form-control" id="form-control" placeholder="Enter Password" name="cPass" required>
 				</div>
 			</div>
 			
 			<div class="row justify-content-center mx-auto text-center">
-				<button type="submit" class="btn btn-dark confirm">CONFIRM</button>
+				<button type="submit" id="submit" class="btn btn-light confirm">CONFIRM</button>
 			</div>
 		</form>
 	</div>
@@ -122,6 +122,15 @@ $(window).load(function()
 	function darkMode() {
 		var element = document.body;
 		element.classList.toggle("dark-mode");
+		$('.form-control').toggleClass('form-dark-mode');
+		if ( document.getElementById("submit").classList.contains('btn-light') ) {
+		document.getElementById("submit").classList.add('btn-dark');
+		document.getElementById("submit").classList.remove('btn-light');
+		}
+		else if ( document.getElementById("submit").classList.contains('btn-dark') ) {
+		document.getElementById("submit").classList.add('btn-light');
+		document.getElementById("submit").classList.remove('btn-dark');
+		}
 	}
 </script>
 
