@@ -6,11 +6,17 @@ body {
 }
 
 .dark-mode {
-	background-color: white;
-	color: black;
 	background-image: url("graphics/main_texture.jpg");
 	background-repeat: repeat;
-	overflow: hidden;
+	color: black;
+}
+
+.form-dark-mode {
+	background-color: black !important;
+}
+
+.form-dark-mode::placeholder {
+	color: white;
 }
 
 .signinform {
