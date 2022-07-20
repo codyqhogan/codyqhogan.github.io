@@ -46,9 +46,10 @@ body {
 	width: 10%;
 	height: 5%;
 	position: absolute;
-	top: 520px;
-	left: 135px;
+	top: 400px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
-	font-size: 25px;
+	font-size: 15px;
 	font-weight: bold;
 }
