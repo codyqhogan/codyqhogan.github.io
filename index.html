@@ -33,8 +33,13 @@
 	function darkMode() {
 		var element = document.body;
 		element.classList.toggle("dark-mode");
-		var img = document.getElementById("topcircle");
-		img.src="graphics/circlethingywh.png";
+		var image = document.getElementById('topcircle');
+		    if (image.src.match("graphics/circlethingy.png")) {
+			image.src = "graphics/circlethingywh.png";
+		    }
+		    else {
+			image.src = "graphics/circlethingy.png";
+		    }
 	}
 </script>
 
