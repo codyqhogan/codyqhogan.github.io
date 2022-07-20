@@ -10,29 +10,29 @@
   };
   
 firebase.initializeApp(firebaseConfig);
-var db = firebase.database().ref('Dine86');
+var db = firebase.database().ref("Dine86");
 
-document.getElementById('signupform').addEventListener('submit', submitForm);
+document.getElementById("signupform").addEventListener("submit", submitForm);
 
 fucntion submitForm(e){
 	e.preventDefault();
 	
-	var name = getInput('oName');
-	var phone = getInput('pNum');
-	var email = getInput('email');
-	var restaurant_name = getInput('rName');
-	var restaurant_address = getInput('rAdd');
-	var city = getInput('rCity');
-	var state = getInput('rState');
-	var zip = getInput('rZip');
-	var passwrd = getInput('pass');
-	var conf = getInput('cPass');
+	var name = getInput("oName");
+	var phone = getInput('pNum");
+	var email = getInput('email");
+	var restaurant_name = getInput("rName");
+	var restaurant_address = getInput("rAdd");
+	var city = getInput("rCity");
+	var state = getInput("rState");
+	var zip = getInput("rZip");
+	var passwrd = getInput("pass");
+	var conf = getInput("cPass");
 	sendInput(name, phone, email, restaurant_name, restaurant_address. city, state, zip, passwrd);
 	document.getElementById("signupform").reset();
 }
 const getInput = (id) => {
 	return document.getElementById(id).value;
-}
+};
 const sendInput = (name, phone, email, restaurant_name, restaurant_address. city, state, zip, passwrd) => {
 	var newRest = db.push();
 	
@@ -47,4 +47,4 @@ const sendInput = (name, phone, email, restaurant_name, restaurant_address. city
 		zip : zip,
 		passwrd : passwrd,
 	});
-}	
+};	
