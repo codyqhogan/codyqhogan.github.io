@@ -47,8 +47,7 @@ body {
 	height: 5%;
 	position: absolute;
 	top: 400px;
-	margin-left: auto;
-	margin-right: auto;
+	left: 55%;
 	text-align: center;
 	font-size: 15px;
 	font-weight: bold;
