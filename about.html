@@ -17,20 +17,23 @@
 
 <body>
 
+<!-- start hotbar navigation -->
 <div class="hotbar">
-<img src="graphics/about_hotbar.png" usemap="#workmap">
+	<img src="graphics/about_hotbar.png" usemap="#workmap">
 
-<map name="workmap">
-	<area shape="circle" coords="30,80,50" href="main.html">
-	<area shape="circle" coords="110,170,50" href="about.html">
-	<area shape="circle" coords="500,170,50" href="signup.html">
-	<area shape="circle" coords="580,80,50" href="signin.html">
-</map>
+	<map name="workmap">
+		<area shape="circle" coords="30,80,50" href="index.html">
+		<area shape="circle" coords="110,170,50" href="about.html">
+		<area shape="circle" coords="500,170,50" href="signup.html">
+		<area shape="circle" coords="580,80,50" href="signin.html">
+	</map>
 </div>
 
+<!-- flavor graphics -->
 <img class="asideleft" src="graphics/about_aside1.jpg">
 <img class="asideright" src="graphics/about_aside2.jpg">
 
+<!-- start content -->
 <div class="container">
 	<section id="section">
 		<div class="textbox" id="textbox">
@@ -47,7 +50,8 @@
     <button class="access" onclick="darkMode()"><img src="graphics/access_org.png" height ="70" width="70"/></button>
 </div>
 
-    <script>
+<!-- dark mode toggle js -->
+<script>
     function darkMode() {
         var element = document.body;
         element.classList.toggle("dark-mode");
@@ -56,7 +60,7 @@
 		var element1 = document.getElementById("section");
 		element1.classList.toggle("section-dark-mode");
     }
-    </script>
+</script>
 
 </body>
 
