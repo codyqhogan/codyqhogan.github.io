@@ -14,7 +14,7 @@ let db = firebase.database().ref("Dine86");
 
 document.getElementById("signupform").addEventListener("submit", submitForm);
 
-fucntion submitForm(e){
+function submitForm(e){
 	e.preventDefault();
 	
 	var name = getInput("oName");
