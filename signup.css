@@ -8,45 +8,57 @@ body {
 .dark-mode {
 	background-color: white;
 	color: black;
-	background-image: url("../graphics/main_texture.jpg");
+	background-image: url("graphics/main_texture.jpg");
 	background-repeat: repeat;
 	overflow: hidden;
 }
 
 .signupform {
-	margin-left: auto;
-	margin-right: auto;
-	position: absolute;
-	height: 80%;
-	width: 80%;
-	left: 30.45%;
-	top: 40%;
-	font-family: 'Krona One', sans-serif;  
+	margin-top: 45px;
+	font-family: 'Krona One', sans-serif;
 }
 
-.access{
-  position: absolute;
-  padding: 0;
-  border: none;
-  background-color: transparent;	
-  cursor: pointer;
-  bottom: 30px;
-  right: 20px;
+.row {
+	width: 60vw;
+	padding-bottom: 0;
 }
 
-.menu {
-	margin-left: auto;
-	margin-right: auto;
-	position: absolute;
+.btn:hover {
+	color: #EE9043;
+	box-shadow: 2px 2px 5px black;
+	transform: translate(-1px, -1px);
+}
+
+h5 {
+	margin-bottom: 2px;
+}
+
+.form-control {
+	margin-top: -2px;
+	margin-bottom: 7px;
+}
+
+.fixed-bottom {
+	left: 96%;
+}
+
+.access {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.hotbar {
+	margin: auto;
+	text-align: center;
 	height: 35vh;
-	top: 0%;
+	width: 40vw;
 }
 
 .confirm {
-	width: 10%;
-	height: 5%;
-	position: absolute;
-	top: 400px;
+	width: 50%;
+	margin-top: 15px;
 	text-align: center;
 	font-size: 15px;
 	font-weight: bold;
