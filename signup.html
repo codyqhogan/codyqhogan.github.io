@@ -31,65 +31,65 @@
 	
 <!-- start register form -->
 <div class="d-flex justify-content-center signupform">
-	<form action="signup" oninput='cPass.setCustomValidity(cPass.value != pass.value ? "Passwords do not match!" : "")'>
+	<form class="signup" oninput='cPass.setCustomValidity(cPass.value != pass.value ? "Passwords do not match!" : "")'>
 		<div class="form-group form-group-lg">
 			<div class="row">
 				<div class="col-6">
 					<h5>Name (Owner)</h5>
-					<input type="text" class="form-control" id="form-control" placeholder="Enter Owner Name" id="oName" required>
+					<input type="text" class="form-control" id="form-control" placeholder="Enter Owner Name" id="oName" name="oName" required>
 				</div>
 	
 				<div class="col-6">
 					<h5>Phone Number</h5>
-					<input type="tel" class="form-control" id="form-control" placeholder="Enter Phone Number" id="pNum"required>
+					<input type="tel" class="form-control" id="form-control" placeholder="Enter Phone Number" id="pNum" name="pNum" required>
 				</div>
 			</div>
 	
 			<div class="row">
 				<div class="col-6">
 					<h5>Email</h5>
-					<input type="email" class="form-control" id="form-control" placeholder="Enter Email" id="email" required>
+					<input type="email" class="form-control" id="form-control" placeholder="Enter Email" id="email" name="email" required>
 				</div>
 	
 				<div class="col-6">
 					<h5>Resturaunt Name</h5>
-					<input type="text" class="form-control" id="form-control" placeholder="Enter Resturaunt Name" id="rName" required>
+					<input type="text" class="form-control" id="form-control" placeholder="Enter Resturaunt Name" id="rName" name="rName" required>
 				</div>
 			</div>
 	
 			<div class="row">
 				<div class="col-6">
 					<h5>Street Address</h5>
-					<input type="text" class="form-control" id="form-control" placeholder="Enter Street Address" id="rAdd" required>
+					<input type="text" class="form-control" id="form-control" placeholder="Enter Street Address" id="rAdd" name="rAdd" required>
 				</div>
 				
 				<div class="col-6">
 					<h5>City</h5>
-					<input type="text" class="form-control" id="form-control" placeholder="Enter City" id="rCity" required>
+					<input type="text" class="form-control" id="form-control" placeholder="Enter City" id="rCity" name="rCity" required>
 				</div>
 			</div>
 	
 			<div class="row">
 				<div class="col-6">
 					<h5>State</h5>
-					<input type="text" class="form-control" id="form-control" placeholder="Enter State" id="rState" required>
+					<input type="text" class="form-control" id="form-control" placeholder="Enter State" id="rState" name="rState" required>
 				</div>
 				
 				<div class="col-6">
 					<h5>Zip Code</h5>
-					<input type="text" class="form-control" id="form-control" placeholder="Enter Zip Code" id="rZip" required>
+					<input type="text" class="form-control" id="form-control" placeholder="Enter Zip Code" id="rZip" name="rZip" required>
 				</div>
 			</div>
 	
 			<div class="row">
 				<div class="col-6">
 					<h5>Password</h5>
-					<input type="password" class="form-control" id="form-control" placeholder="Enter Password" id="pass" required>
+					<input type="password" class="form-control" id="form-control" placeholder="Enter Password" id="pass" name="pass" required>
 				</div>
 				
 				<div class="col-6">
 					<h5>Confirm Password</h5>
-					<input type="password" class="form-control" id="form-control" placeholder="Enter Password" id="cPass" required>
+					<input type="password" class="form-control" id="form-control" placeholder="Enter Password" id="cPass" name="cPass" required>
 				</div>
 			</div>
 			
@@ -134,9 +134,9 @@ $(window).load(function()
 	}
 </script>
 
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<!--<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>-->
+<script src="/dist/bundle.js"></script>
 </body>
- <script src="index.js"></script>
 </html>
